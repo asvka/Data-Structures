@@ -13,8 +13,8 @@ class LinkedList:
         output: ''
         current_node = self.head
         while current_node is not None:
-            output += f'{current_node.next_node} => '
-            current_node = current_node.next_node
+            output += f'{current_node.next} => '
+            current_node = current_node.next
         return output
 
     def add_to_head(self, value):
@@ -46,21 +46,6 @@ class LinkedList:
         head_value = self.head.value
         self.head = self.head.next_node
         return head_value
-
-        # def remove_tail(self):
-    #     if not self.tail:
-    #         return None
-    #     if self.head is self.tail:
-    #         value = self.tail.get_value()
-    #         self.head = None
-    #         self.tail = None
-    #         return value
-    #     curr = self.head
-    #     while curr.get_next() is not self.tail:
-    #         curr = curr.get_next()
-    #     value = self.tail.get_value()
-    #     self.tail = curr
-    #     return value
 
     def get_max(self):
         if not self.head:
