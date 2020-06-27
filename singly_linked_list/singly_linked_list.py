@@ -70,10 +70,3 @@ class LinkedList:
             current_node = current_node.next_node
         return False
 
-
-# linked_list = LinkedList()
-#
-# linked_list.add_to_head(0)
-# linked_list.add_to_tail(2)
-# print(f'Contains 0? {linked_list.contains(0)}')
-# print(f'Contains 2? {linked_list.contains(2)}')
